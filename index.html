@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NovaUI Framework</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="./"
+        ><b>N</b
+        ><span>NOVA<span>UI</span><small>COMPONENT PLAYGROUND</small></span></a
+      >
+      <nav>
+        <a href="#playground">Playground</a><a href="#tokens">Tokens</a
+        ><a href="#usage">Usage</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <p class="kicker">DESIGN SYSTEM / PROJECT 34</p>
+        <h1>Small components.<br /><em>Bold interfaces.</em></h1>
+        <p>
+          Shape accessible interface primitives and copy production-ready
+          starter code.
+        </p>
+      </section>
+      <section id="playground" class="studio">
+        <aside class="panel catalogue">
+          <p class="kicker">COMPONENTS</p>
+          <button data-kind="button" class="active">01 · Buttons</button
+          ><button data-kind="input">02 · Inputs</button
+          ><button data-kind="card">03 · Cards</button
+          ><button data-kind="alert">04 · Alerts</button
+          ><button data-kind="badge">05 · Badges</button>
+          <button data-kind="toggle">06 · Toggle</button>
+          <button data-kind="progress">07 · Progress</button>
+          <button data-kind="avatar">08 · Avatars</button>
+          <button data-kind="table">09 · Table</button>
+        </aside>
+        <section class="panel canvas">
+          <div class="canvasbar">
+            <span>LIVE CANVAS</span>
+            <div class="sizes">
+              <button data-size="100%" class="active">Desktop</button
+              ><button data-size="520px">Tablet</button
+              ><button data-size="320px">Mobile</button>
+            </div>
+          </div>
+          <div id="preview"></div>
+        </section>
+        <aside class="panel controls">
+          <p class="kicker">PROPERTIES</p>
+          <label
+            >Accent colour<input
+              type="color"
+              id="accent"
+              value="#a855f7" /></label
+          ><label
+            >Corner radius<input
+              type="range"
+              id="radius"
+              min="0"
+              max="28"
+              value="12"
+            /><output id="radiusOut">12px</output></label
+          ><label
+            >Density<select id="density">
+              <option value="8px 14px">Compact</option>
+              <option value="12px 20px" selected>Comfortable</option>
+              <option value="16px 26px">Spacious</option>
+            </select></label
+          ><label
+            >Variant<select id="variant">
+              <option>Primary</option>
+              <option>Outline</option>
+              <option>Ghost</option>
+              <option>Danger</option>
+            </select></label
+          >
+        </aside>
+      </section>
+      <section class="code panel">
+        <div>
+          <p class="kicker">GENERATED CODE</p>
+          <h2>Ready to adapt.</h2>
+        </div>
+        <div class="tabs">
+          <button data-tab="html" class="active">HTML</button
+          ><button data-tab="css">CSS</button
+          ><button id="copy">Copy code</button>
+        </div>
+        <pre><code id="code"></code></pre>
+      </section>
+      <section class="info">
+        <article id="tokens">
+          <p class="kicker">TOKENS</p>
+          <h2>Predictable by design</h2>
+          <p>
+            Accent, radius, spacing and focus treatments update together so
+            components keep a consistent visual language.
+          </p>
+        </article>
+        <article id="usage">
+          <p class="kicker">ACCESSIBILITY</p>
+          <h2>Useful states included</h2>
+          <p>
+            Keyboard focus, disabled appearance, readable contrast and semantic
+            markup are treated as core features.
+          </p>
+        </article>
+      </section>
+    </main>
+    <style>
+      .profile-footer .social {
+        display: grid;
+        place-items: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #60708e66;
+        border-radius: 11px;
+        color: #dce8ff;
+        text-decoration: none;
+        background: #07101c;
+      }
+      .profile-footer .social:hover {
+        border-color: #22d3ee;
+        color: #22d3ee;
+        transform: translateY(-2px);
+      }
+      .profile-footer .tech {
+        padding: 4px 10px;
+        border: 1px solid #52618155;
+        border-radius: 5px;
+        font: 700 9px ui-monospace;
+        color: #9fb0c9;
+      }
+      .profile-footer a {
+        text-decoration: none;
+      }
+    </style>
+    <footer
+      class="profile-footer"
+      style="
+        display: block;
+        width: min(1380px, 94%);
+        margin: 55px auto 24px;
+        padding: 30px 24px 18px;
+        border: 1px solid #52618145;
+        border-radius: 20px;
+        background: linear-gradient(
+          135deg,
+          #040915f5,
+          #071522f0 55%,
+          #170a1ded
+        );
+        box-shadow: 0 24px 70px #0008;
+        overflow: hidden;
+        color: #91a0b9;
+      "
+    >
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(
+            auto-fit,
+            minmax(min(280px, 100%), 1fr)
+          );
+          gap: 46px;
+        "
+      >
+        <section>
+          <b style="font: 900 21px ui-monospace; color: #b66cff"
+            ><i style="color: #22d3ee; font-style: normal">[</i>SM<i
+              style="color: #22d3ee; font-style: normal"
+              >]</i
+            ></b
+          >
+          <p style="max-width: 480px; color: #aab8d0; line-height: 1.7">
+            Learning by building — from modern web experiences to strong
+            software-engineering fundamentals.
+          </p>
+          <small
+            style="
+              font: 700 9px ui-monospace;
+              letter-spacing: 0.18em;
+              color: #70829e;
+            "
+            >B.TECH IT STUDENT · FULL STACK DEVELOPER · BUILDER</small
+          >
+          <div style="display: flex; gap: 10px; margin-top: 20px">
+            <a class="social" href="https://github.com/sudesh4545">GH</a
+            ><a class="social" href="https://www.linkedin.com/in/sudeshmehar3/"
+              >in</a
+            ><a class="social" href="mailto:sudeshmehar3@gmail.com">@</a
+            ><a
+              class="social"
+              href="https://sudesh4545.github.io/sudesh-portfolio/"
+              >↗</a
+            >
+          </div>
+        </section>
+        <section>
+          <b
+            style="
+              font: 800 9px ui-monospace;
+              letter-spacing: 0.2em;
+              color: #fff;
+            "
+            >GET IN TOUCH</b
+          ><a
+            href="mailto:sudeshmehar3@gmail.com"
+            style="display: block; margin-top: 20px; color: #9fc6ff"
+            >sudeshmehar3@gmail.com</a
+          >
+          <p>New Delhi, India</p>
+          <p style="color: #c5f9e8">
+            <i
+              style="
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #20e7a8;
+                box-shadow: 0 0 14px #20e7a8;
+                margin-right: 8px;
+              "
+            ></i
+            >Open to internships &amp; collaboration
+          </p>
+          <div style="display: flex; gap: 7px; flex-wrap: wrap">
+            <span class="tech">TypeScript</span><span class="tech">HTML</span
+            ><span class="tech">CSS</span>
+          </div>
+        </section>
+      </div>
+      <div
+        style="
+          margin-top: 28px;
+          padding-top: 17px;
+          border-top: 1px solid #5261812e;
+          color: #65738c;
+          font-size: 10px;
+        "
+      >
+        © 2026 Sudesh Mehar. Built with code, curiosity and creativity.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
